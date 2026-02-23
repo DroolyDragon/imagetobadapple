@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bad Apple Pixel Flow</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="scene"></canvas>
+
+  <div id="ui">
+    <label class="button">
+      <input id="imageInput" type="file" accept="image/*" />
+      Upload image
+    </label>
+  </div>
+
+  <!-- Hidden video source -->
+  <video
+    id="badAppleVideo"
+    src="/【東方】Bad Apple!! ＰＶ【影絵】.mp4"
+    muted
+    playsinline
+    loop
+    style="display:none"
+  ></video>
+
+  <!-- Bad Apple audio -->
+  <audio
+    id="badAppleAudio"
+    src="/【東方】Bad Apple!! ＰＶ【影絵】 4.mp3"
+    preload="auto"
+  ></audio>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
